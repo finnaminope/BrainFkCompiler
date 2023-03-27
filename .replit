@@ -1,0 +1,4 @@
+run = "echo 'compiling compiler' && gcc main.c -o main -Wno-unused-result && echo 'running compiler' && ./main code.bf code.c && echo 'compiling output' && gcc code.c -o code && echo 'running compiled output' && ./code"
+
+[nix]
+channel = "stable-22_11"
